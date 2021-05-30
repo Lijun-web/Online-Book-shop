@@ -31,7 +31,9 @@
 <body>
 
 <div id="header">
-	<img class="logo_img" alt="" src="static/img/logo.gif" >
+	<a href = "index.jsp">
+		<img class="logo_img" alt="" src="static/img/logo.gif" >
+	</a>
 	<span class="wel_word">Online Buchhandlung</span>
 	<div>
 <%--		如果用户还没有登录，则显示登录和注册菜单--%>

@@ -23,7 +23,9 @@
 </head>
 <body>
 		<div id="header">
-			<img class="logo_img" alt="" src="../../static/img/logo.gif" >
+			<a href="index.jsp">
+				<img class="logo_img" alt="" src="static/img/logo.gif" >
+			</a>
 			<span class="wel_word">Bücher edieren</span>
 
 <%--			静态包含manager管理模块的菜单--%>

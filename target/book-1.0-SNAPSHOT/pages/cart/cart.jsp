@@ -42,24 +42,26 @@
 <body>
 	
 	<div id="header">
+		<a href = "index.jsp">
 			<img class="logo_img" alt="" src="static/img/logo.gif" >
-			<span class="wel_word">Warenkorb</span>
-			<div>
-				<%--		如果用户还没有登录，则显示登录和注册菜单--%>
-				<c:if test="${empty sessionScope.user}">
+		</a>
+		<span class="wel_word">Warenkorb</span>
+		<div>
+			<%--		如果用户还没有登录，则显示登录和注册菜单--%>
+			<c:if test="${empty sessionScope.user}">
 
-					<a href="pages/user/login.jsp">anmelden</a> |
-					<a href="pages/user/regist.jsp">registieren</a> &nbsp;&nbsp;
+				<a href="pages/user/login.jsp">anmelden</a> |
+				<a href="pages/user/regist.jsp">registieren</a> &nbsp;&nbsp;
 
-				</c:if>
-				<c:if test="${not empty sessionScope.user}">
-					<span><span class="um_span">${sessionScope.user.username}</span>herzlichen Willkommen!</span>
-					<a href="orderServlet?action=showOrders">meine Bestellungen</a> |
-					<a href="userServlet?action=logout">abmelden</a> |
-				</c:if>
-				<a href="pages/cart/cart.jsp">Warenkorb</a> |
-				<a href="pages/manager/manager.jsp">managen</a>
-			</div>
+			</c:if>
+			<c:if test="${not empty sessionScope.user}">
+				<span><span class="um_span">${sessionScope.user.username}</span>herzlichen Willkommen!</span>
+				<a href="orderServlet?action=showOrders">meine Bestellungen</a> |
+				<a href="userServlet?action=logout">abmelden</a> |
+			</c:if>
+			<a href="pages/cart/cart.jsp">Warenkorb</a> |
+			<a href="pages/manager/manager.jsp">managen</a>
+		</div>
 	</div>
 	
 	<div id="main">

@@ -107,15 +107,15 @@ public class JdbcUtils {
 
     }
 
-//    public static void close(Connection conn){
-//
-//        if(conn != null){
-//            try {
-//                conn.close();
-//            } catch (SQLException throwables) {
-//                throwables.printStackTrace();
-//            }
-//        }
+    public static void close(Connection conn){
 
-//    }
+        if(conn != null){
+            try {
+                conn.close();
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        }
+
+    }
 }

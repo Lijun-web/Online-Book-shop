@@ -16,8 +16,10 @@
 <body>
 	
 	<div id="header">
-			<img class="logo_img" alt="" src="../../static/img/logo.gif" >
-			<span class="wel_word">Managersystem</span>
+		<a href="index.jsp">
+			<img class="logo_img" alt="" src="static/img/logo.gif" >
+		</a>
+		<span class="wel_word">Managersystem</span>
 		<%--			静态包含manager管理模块的菜单--%>
 		<%@include file="/pages/common/manager_menu.jsp"%>
 	</div>
